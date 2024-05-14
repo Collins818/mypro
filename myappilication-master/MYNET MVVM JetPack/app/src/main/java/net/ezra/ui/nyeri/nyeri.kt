@@ -362,9 +362,7 @@ fun Nyeriscreen(navController: NavHostController) {
 
                                     Row {
                                         OutlinedButton(onClick = {
-                                            val callIntent = Intent(Intent.ACTION_DIAL)
-                                            callIntent.data = "tel:0111992361".toUri()
-                                            mContext.startActivity(callIntent)
+
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)))
                                         {
                                             Text(text = "Call")
@@ -372,15 +370,12 @@ fun Nyeriscreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("Sarova@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Sarova Email box how can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/"))
+                                            mContext.startActivity(intent)
+
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
-                                            Text(text = "Email")
+                                            Text(text = "Book")
 
                                         }
                                     }

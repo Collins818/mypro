@@ -368,12 +368,8 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("Sarova@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Sarova Email box how can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://github.com/"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
                                             Text(text = "Email")
@@ -476,12 +472,8 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("HiltonHOTEL@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Hilton Hotel How can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://www.booking.com/hotel/ke/royal-orchid-azure-nairobi.en-gb.html?aid=357028&label=bin859jc-1FCAModkIHbmFpcm9iaUgzWANodogBAZgBCbgBF8gBDNgBAegBAfgBDIgCAagCA7gC7tuLsgbAAgHSAiRlMDQ3OGZjYS0wZDEyLTQ2MTEtYjQ4Ni1mMWJlZjc3ZGJiMDTYAgbgAgE&sid=74d61dbdf768e4df5b66037d8b8064d9&all_sr_blocks=113550013_269689122_2_42_0;checkin=2024-06-23;checkout=2024-06-24;dest_id=-2258072;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=113550013_269689122_2_42_0;hpos=1;matching_block_id=113550013_269689122_2_42_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=113550013_269689122_2_42_0__14742;srepoch=1715662395;srpvid=87ad2256a26a04a0;type=total;ucfs=1&#hotelTmpl"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
                                             Text(text = "Email")
@@ -585,15 +577,11 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("swiss@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Boma hotel WELCOME")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://www.booking.com/searchresults.en-gb.html?label=bin859jc-1BCAModkIHbmFpcm9iaUgzWANodogBAZgBCbgBF8gBDNgBAegBAYgCAagCA7gC7tuLsgbAAgHSAiRlMDQ3OGZjYS0wZDEyLTQ2MTEtYjQ4Ni1mMWJlZjc3ZGJiMDTYAgXgAgE&sid=74d61dbdf768e4df5b66037d8b8064d9&aid=357028&highlighted_hotels=1500540&city=-2258072"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
-                                            Text(text = "Email")
+                                            Text(text = "Book")
 
                                         }
                                     }
@@ -693,15 +681,11 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("Boma@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Boma hotel WELCOME")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://www.booking.com/searchresults.en-gb.html?label=bin859jc-1BCAModkIHbmFpcm9iaUgzWANodogBAZgBCbgBF8gBDNgBAegBAYgCAagCA7gC7tuLsgbAAgHSAiRlMDQ3OGZjYS0wZDEyLTQ2MTEtYjQ4Ni1mMWJlZjc3ZGJiMDTYAgXgAgE&sid=74d61dbdf768e4df5b66037d8b8064d9&aid=357028&highlighted_hotels=1500540&city=-2258072"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
-                                            Text(text = "Email")
+                                            Text(text = "book")
 
                                         }
                                     }
@@ -827,15 +811,10 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("Sarova@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Nairobi National park")
-                                            mContext.startActivity(shareIntent)
+
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
-                                            Text(text = "Email")
+                                            Text(text = "More")
 
                                         }
                                     }
@@ -926,12 +905,8 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("HiltonHOTEL@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Hilton Hotel How can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://en.wikipedia.org/wiki/Karen_Blixen_Museum,_Kenya"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
                                             Text(text = "Email")
@@ -1258,12 +1233,8 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("Sarova@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Sarova Email box how can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://museums.or.ke/nairobi-national-museum/"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
                                             Text(text = "Email")
@@ -1352,12 +1323,8 @@ fun EveningScreen(navController: NavHostController) {
                                         Spacer(modifier = Modifier.width(2.dp))
 
                                         OutlinedButton(onClick = {
-                                            val shareIntent = Intent(Intent.ACTION_SEND)
-                                            shareIntent.type = "text/plain"
-                                            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("HiltonHOTEL@gmail.com"))
-                                            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "subject")
-                                            shareIntent.putExtra(Intent.EXTRA_TEXT, "Hello, this is Hilton Hotel How can we help you")
-                                            mContext.startActivity(shareIntent)
+                                            val intent =Intent(Intent.ACTION_VIEW,Uri.parse("https://en.wikipedia.org/wiki/Karen_Blixen_Museum,_Kenya"))
+                                            mContext.startActivity(intent)
                                         },border = BorderStroke(2.dp, color = Color(0xff68d1eb)) )
                                         {
                                             Text(text = "Email")
